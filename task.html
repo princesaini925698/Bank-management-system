@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CodeCraft</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; color: #222; }
+
+    header { background: #1a1a2e; padding: 16px 40px; display: flex; justify-content: space-between; align-items: center; }
+    header a { color: #fff; text-decoration: none; font-size: 1.3rem; font-weight: bold; }
+    nav a { color: #ccc; text-decoration: none; margin-left: 20px; }
+    .btn { background: #4f46e5; padding: 8px 18px; border-radius: 6px; color: #fff !important; }
+
+    .hero { background: linear-gradient(135deg, #1a1a2e, #2d2b55); color: #fff; text-align: center; padding: 80px 20px; }
+    .hero h1 { font-size: 2.8rem; margin-bottom: 14px; }
+    .hero h1 span { color: #a78bfa; }
+    .hero p { color: #aaa; margin-bottom: 28px; font-size: 1.1rem; }
+    .hero a { background: #4f46e5; color: #fff; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-size: 1rem; }
+
+    section { padding: 60px 40px; }
+    section h2 { text-align: center; font-size: 1.8rem; margin-bottom: 8px; }
+    .sub { text-align: center; color: #777; margin-bottom: 36px; }
+    .alt { background: #f4f4f8; }
+    .row { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+
+    .card { background: #fff; border: 1px solid #e0e0e0; border-radius: 10px; padding: 24px 20px; width: 220px; text-align: center; }
+    .card .icon { font-size: 2rem; margin-bottom: 10px; }
+    .card h3 { margin-bottom: 6px; }
+    .card p { font-size: 0.85rem; color: #666; line-height: 1.5; }
+    .step-num { font-size: 2.2rem; font-weight: bold; color: #4f46e5; margin-bottom: 8px; }
+
+    .pcard { width: 250px; border: 1px solid #e0e0e0; border-radius: 10px; overflow: hidden; }
+    .thumb { height: 140px; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; }
+    .t1 { background: linear-gradient(135deg, #667eea, #764ba2); }
+    .t2 { background: linear-gradient(135deg, #11998e, #38ef7d); }
+    .t3 { background: linear-gradient(135deg, #f7971e, #ffd200); }
+    .pinfo { padding: 16px; }
+    .pinfo h3 { margin-bottom: 4px; }
+    .pinfo p { font-size: 0.85rem; color: #666; }
+
+    .cta { background: #4f46e5; color: #fff; text-align: center; padding: 70px 20px; }
+    .cta h2 { font-size: 2rem; margin-bottom: 10px; }
+    .cta p { color: rgba(255,255,255,0.7); margin-bottom: 26px; }
+    .cta a { background: #fff; color: #4f46e5; padding: 13px 32px; border-radius: 8px; text-decoration: none; font-weight: bold; }
+
+    footer { background: #1a1a2e; color: #aaa; padding: 28px 40px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+    footer b { color: #fff; }
+    footer a { color: #aaa; text-decoration: none; margin-left: 18px; font-size: 0.9rem; }
+    footer a:hover { color: #fff; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="#">⬡ CodeCraft</a>
+    <nav>
+      <a href="#learn">Learn</a>
+      <a href="#steps">How it works</a>
+      <a href="#projects">Projects</a>
+      <a href="#" class="btn">Get started</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Build things that <span>live on the web.</span></h1>
+    <p>Learn HTML & CSS by making real projects — your first page ships today.</p>
+    <a href="#learn">Start for free →</a>
+  </div>
+
+  <section id="learn">
+    <h2>What you'll learn</h2>
+    <p class="sub">Columns · Sections · Headers · Footers · Color · Boxes · Padding · Alignment</p>
+    <div class="row">
+      <div class="card"><div class="icon">🏗️</div><h3>HTML Structure</h3><p>Sections, headers, footers and divs that keep your page organised.</p></div>
+      <div class="card"><div class="icon">🎨</div><h3>Color & Boxes</h3><p>Pick palettes, style boxes and use borders so nothing looks plain.</p></div>
+      <div class="card"><div class="icon">📐</div><h3>Columns & Layout</h3><p>Arrange items in rows and columns — no overlapping guaranteed.</p></div>
+      <div class="card"><div class="icon">✨</div><h3>Padding & Alignment</h3><p>Space everything perfectly so the page feels clean and impressive.</p></div>
+    </div>
+  </section>
+
+  <section id="steps" class="alt">
+    <h2>How it works</h2>
+    <p class="sub">Three simple steps to your first live page.</p>
+    <div class="row">
+      <div class="card"><div class="step-num">01</div><h3>Read the concept</h3><p>Short, clear explanations with no jargon.</p></div>
+      <div class="card"><div class="step-num">02</div><h3>Code in browser</h3><p>Live editor — instant preview, zero setup.</p></div>
+      <div class="card"><div class="step-num">03</div><h3>Ship your page</h3><p>Deploy to GitHub and share a real link.</p></div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>What you'll build</h2>
+    <p class="sub">Real projects ready to go in your portfolio.</p>
+    <div class="row">
+      <div class="pcard"><div class="thumb t1">🌐</div><div class="pinfo"><h3>Landing Page</h3><p>Hero, sections and footer — aligned by hand.</p></div></div>
+      <div class="pcard"><div class="thumb t2">📰</div><div class="pinfo"><h3>Blog Layout</h3><p>Multi-column grid with sidebar and headings.</p></div></div>
+      <div class="pcard"><div class="thumb t3">🛒</div><div class="pinfo"><h3>Product Page</h3><p>Pricing card, image box and styled button.</p></div></div>
+    </div>
+  </section>
+
+  <div class="cta">
+    <h2>Your first page ships tonight.</h2>
+    <p>Free to start. No credit card needed.</p>
+    <a href="#">Start building →</a>
+  </div>
+
+  <footer>
+    <b>⬡ CodeCraft</b>
+    <div><a href="#">Learn</a><a href="#">Projects</a><a href="#">Blog</a><a href="#">Contact</a></div>
+    <small>© 2026 CodeCraft</small>
+  </footer>
+
+</body>
+</html>
